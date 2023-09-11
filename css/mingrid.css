@@ -1,0 +1,57 @@
+@font-face {
+    font-family: DuCoHeadline200;
+    src: url(font/DuCoHeadline200.ttf);
+    font-family: DuCoHeadline400;
+    src: url(font/DuCoHeadline400.ttf);
+    font-family: DuCoHeadline600;
+    src: url(font/DuCoHeadline600.ttf);
+}
+
+*{
+    direction: rtl;
+}
+body{
+    width: 685px;
+    height: 202px;
+}
+
+/*grid*/
+        #container{
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            gap:0px 0px;
+            grid-template-areas:
+            " sel sel "
+            " chec radio "
+             ;
+        
+        }
+
+.select1{
+    grid-area: sel;
+}
+.radio{
+    grid-area: radio;
+}
+.checkbox1{
+    grid-area: chec;
+}
+td{
+    text-align: right;
+   margin-left: 10px;
+    
+}
+.checkbox1{
+    width: 456.01px;
+    height: 115px;
+}
+.select{
+    width: 142px;
+    height: 36px;
+    float: inline-start;
+    margin: 10px;
+} 
+.tiem{
+    width: 142px;
+    height: 36px;
+}

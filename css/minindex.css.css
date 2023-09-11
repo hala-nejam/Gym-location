@@ -1,0 +1,574 @@
+@font-face {
+    font-family: DuCoHeadline200;
+    src: url(font/DuCoHeadline200.ttf);
+    font-family: DuCoHeadline400;
+    src: url(font/DuCoHeadline400.ttf);
+    font-family: DuCoHeadline600;
+    src: url(font/DuCoHeadline600.ttf);
+}
+/* */
+.dropbtn {
+    font-family: Du Co Headline Arabic200 ,sans-serif;
+    font-size: 14;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 260px;
+  margin-left: 200px;
+  
+float: right;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* margin: 30px; */
+  width: 685px;
+  height: 202px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /* min-width: 160px; */
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  /* width: 685px;
+  height: 302px; */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:initial;
+}
+
+
+.show {display: block;}
+.fa-search{
+    background-color: #F4B700;
+    color:white;
+    /* width: 97px;
+    height: 65.86px; */
+   text-align: center;
+ padding-top: 20px;
+}
+
+input[type=checkbox] {
+ color: yellow;
+  
+}
+input[type=radio]:after {
+    color: yellow;
+}
+/* */
+*{
+    direction: rtl;
+}
+body{ 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+  
+    #container1 {
+        display: grid;
+        gap: 0px 0px;
+        grid-auto-rows: minmax(50px,auto);
+        grid-template-areas: "nav nav nav"
+        "slider slider slider"
+        "slider slider slider"
+        "slider slider slider"
+        " card card  card"
+        "con1 con1 con1"
+        "con2 con2 con2"
+        " foot  foot  foot"
+        "footer footer footer";
+       
+    }
+  
+    .nav{
+        grid-area: nav;
+        display: grid;
+    }
+    
+    .slider{
+        grid-area: slider;
+    
+    }
+    .card{
+        grid-area: card;
+    }
+    .content1{
+        grid-area: con1;
+        margin-right: 5px;
+        display: grid;
+        grid-auto-rows: minmax(100px,auto);
+        grid-template-areas: "group1"
+        "group2"
+        "group3";
+        
+       
+        
+    }
+    .img-group1{
+        grid-area:group1 ;
+    }
+    .img-group2{
+        grid-area: group2;
+    }
+    .img-group3{grid-area: group3;}
+    .content2{
+        grid-area: con2;
+    }
+    .foot{
+        grid-area: foot;
+        gap: 0px;
+    }
+    .footer{
+        grid-area: footer;
+        gap: 0px;
+    }
+ /* start nav*/
+
+.img1{
+    /* margin-right: 92px; */
+    margin-right: 79px;
+}
+.nav-item {
+    font-size: 16px;
+    text-align: right;
+}
+
+.navbar-dark .navbar-brand.Login{
+    color: #F4B700;
+    margin-right: 200px;
+}
+ .navbar-nav .nav-link a{
+    padding-right: 51px;
+    font-family: Du Co Headline Arabic400;
+    font-size: 16px;
+}
+  
+  .onee{
+        float: right;
+    }
+    .background{
+        background-color: #F4B700;
+    }
+    /*slider */
+    .z{
+        position:absolute;
+        z-index:3;
+        margin-right: 100px;
+    
+    }
+    .z h1{
+        color: white;
+        font-family: Du Co Headline Arabic400;
+        font-size: 25px;
+    }
+    .z img{
+        text-align: right;
+      margin-left: 150px;
+    }
+    .z span{
+        color: white;
+        font-size: 16px;
+        font-family: Du Co Headline Arabic200;
+    }
+    .slider .carousel-inner img{
+        
+        justify-content: center;
+       
+    }
+    .slider .carousel-inner h1{
+       
+            font-size: 25px;
+        color: white;
+        
+        
+    }
+    .slider .carousel-inner span{
+        color: white;
+        font-size: 16px;
+        text-align:right;
+        
+    
+    }
+    .slider .carousel-inner .overlay{
+        position:absolute;
+        height:100% ;
+        width: 100%;
+        left:0px ;
+        top:0px ;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: 2;
+    }
+    .col-auto{
+        position:absolute;
+        z-index: 2;
+        color: black;
+       
+    
+    }
+    .input-group{
+        width: 874px;
+        height: 65px;
+   background-color: white;
+   margin-top: 250px;
+   margin-right: 30px;
+    }
+    .span2{
+        border: none;
+        width: 600px;
+        height: 66.12px;
+        background-color: #FBFBFB;
+    }
+    .fa-search{
+        height: 65px;
+        width: 97px;
+       
+    }
+    i.filter {
+        color: #F4B700;
+        font-size: 14px;
+        font-family: Du Co Headline Arabic400;
+    }
+    .fa-filter{
+        width: 18.6px;
+        height: 17.15px;
+        color: #BDC3C1;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .span3{
+        width: 148px;
+        height: 42px;
+        background-color: #FBFBFB;
+        margin-left: 30px;
+      
+    }
+    .slider .carousel-item{
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         width: 650px;
+        height:100px; 
+    }
+    .slider{
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        grid-area: slider;
+        background-image: url('../img/Mask.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+           
+    }
+    
+   
+    /*card */
+    .one1{
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-image: url(../img/img33.jpg);
+        width: 100%;
+        height: 100%;
+       
+    }
+    .maring2{
+        margin-top: 30px;
+        float: right;
+        text-align: right;
+    margin-right: 20px;
+        
+     }
+     .one1{
+        text-align: right;
+     }
+     .one1 span{
+         color: white;
+         font-size: 20px;
+         margin-right: 121px;
+         margin-top: 15px;
+     }
+     .one1 h1{
+         color: yellow;
+        font-size: 46;
+        margin-right: 63px;
+        margin-top: 10px;
+     }
+     .one1 p{
+         color: white;
+         font-size: 29px;
+         margin-right: 63px;
+         margin-top: 10px;
+     }
+     /* content1*/
+     .right{
+         text-align: right;
+         margin-right: 20px;
+         margin-top: 15px;
+     }
+     /* */
+     .blak{
+        color:white;
+        background-color: #111113;
+        width: 324px;
+        height: 50px;
+        text-align: right;
+      margin-top: 10px;
+    
+    }
+ 
+    .display{
+        display:inline;
+    
+        font-size: 14px;
+    }
+    .tow33 {
+        text-align: right;
+        margin-right: 400px;
+    }
+    .articple{
+        background-color: #F6F6F6;
+        /* height: 478px;
+        width: 324px; */
+        
+       
+    }
+    .img3{
+        float: right;
+    }
+    .background button{
+        font-size: 20px;
+        font-family: Du Co Headline Arabic400;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+    }
+    .background h2{
+        text-align: center;
+        
+    }
+    
+     /* */
+footer{
+    background-color: black;
+    /* height: 600.87px;
+    margin-top: 15px; */
+    
+}
+.text{
+    color: white;
+    text-align: center;
+    /* width:580px ;
+    height:154px ; */
+    float: right;
+   
+}
+.margin{
+    float: right;
+}
+h3{
+    color: white;
+}
+table{
+    border: 1px solid white;
+    height: 260px;
+    width: 357px;
+    text-align: right;
+}
+
+
+.table td input{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 350px;
+    height: 60px;
+   
+}
+textarea.form-control {
+    height: auto;
+    background-color: black;
+    color: white;
+    width: 350px;
+    border: none;
+    border-color:black;
+}
+.form-control:focus {
+    background-color: black;
+    /* background-color: #fff; */
+    border-color:black;
+}
+.table-dark td, .table-dark th, .table-dark thead th{
+    background-color: black;
+   
+}
+a img{
+    margin-left: 15px;
+}
+
+.tow{
+    margin-top: 15px;
+} 
+.tow h1{
+    color: white;
+    font-size: 26px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 650px;
+}
+.img{
+    float: right;
+}
+.button2{
+    background-color: black;
+    color:yellow;
+    font-size: 12px;
+    border: 1px solid #707070;
+    width: 375px;
+    height: 41px; 
+    margin-left: 250px;
+    margin-bottom: 15px;
+}
+.foot  h1{
+float: right;
+}
+.foot5{
+    float: right;
+}
+.table {
+    width: 80%;
+    max-width: 100%;
+    margin-right: 15px;
+}.b{
+    
+    color: brown;
+    font-size: 50px;
+}
+.margin {
+    float: right;
+    margin-right: 15px;
+}
+    @media (min-width:768px){
+       
+
+    }
+
+    @media (min-width: 992px) {
+        #container1 {
+            grid-template-areas: "nav nav nav"
+            "slider slider slider"
+            " card card  card"
+            "con1  con2 con2"
+            " foot  foot  foot"
+            "footer footer footer";
+           
+        }
+        .content2{
+            display: grid;
+           
+        }
+        .slider{
+            display: grid;
+            
+        }
+        .onee{
+            margin-top: 110px;
+        }
+        .one1{
+            margin-top: 15px;
+           text-align: right;
+           width: 70%;
+           height: 100%;
+
+        
+           
+        }
+        .slider{
+            width: 1366px;
+            height: 679.55px;
+               
+        }
+        .content2{
+            float: none;
+        }
+        .articple{
+            height: 478px;
+        width: 324px;
+        }
+/* */
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 600.87px;
+         margin-top: 15px;
+
+ }
+ .table{
+    margin-top: 50px;
+    margin-right: 141px;
+    width: 357px;
+    height: 260pxs;
+}
+
+.button2{
+   margin-left: 160px;
+    width: 375px;
+    height: 41px; 
+
+}
+.dropbtn {
+  padding: 10px;
+  margin-top: 300px;
+float: right;
+width: 799.5px;
+  height: 66.12px;
+margin-right: 150px;
+}
+.z{
+    margin-right: 300px;
+
+}
+.tow33 {
+    
+    margin-right: 0px;
+    
+}
+.tow2 {
+    background-color: #F6F6F6;
+    margin-left: auto;
+    }
+
+    .foot h1 {
+        margin-right: 10px;
+    }
+    .foot5 {
+     
+        margin-right: 30px;
+    }
+    
+.tow h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 141px;
+    margin-left: 0px;
+  
+
+}
+    }

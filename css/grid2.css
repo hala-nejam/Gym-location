@@ -1,0 +1,337 @@
+ @font-face {
+    font-family: DuCoHeadline200;
+    src: url(font/DuCoHeadline200.ttf);
+    font-family: DuCoHeadline400;
+    src: url(font/DuCoHeadline400.ttf);
+    font-family: DuCoHeadline600;
+    src: url(font/DuCoHeadline600.ttf);
+}
+
+*{
+    direction: rtl;
+}
+body{ 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*grid*/
+        #container{
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            gap:50px 5px;
+            grid-template-areas:
+            " nav      nav      nav  "
+            "ch2       ch2        ch2 "
+            "ch3        ch3        ch3"
+            "footer footer footer" ;
+        
+        }
+
+        .nav{
+            grid-area: nav;
+            background-color:black;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 10px;
+
+        }
+        .child2{
+        grid-area: ch2;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5px;
+        width: 100%;
+        text-align: right;
+        margin-right: 15px;
+
+        
+        }
+
+        .child3{
+            grid-area: ch3 ; 
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 5px;
+            width: 80%;
+       margin-right: 10px;
+        text-align: right;
+        border: 1px solid #F4B700;
+
+        }
+        .footer{
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:repeat(2,1fr) ;
+            grid-gap: 10px;
+        }
+        /* start nav*/
+        .nav{
+            display: grid;
+        }
+        
+        .img1{
+            margin-right: 92px;
+        }
+        .nav-item {
+            font-size: 16px;
+            text-align: right;
+        }
+        
+        .navbar-dark .navbar-brand.Login{
+            color: #F4B700;
+            margin-right: 245px;
+        }
+         .navbar-nav .nav-link a{
+            padding-right: 51px;
+            font-size: 16px;
+        }
+        
+/* end nav*/
+/* child2  */
+.child21{
+    font-family: DuCoHeadline400 ;
+    font-size: 32px;
+    margin-right: 30px;
+    
+}
+.child22{
+    font-family: DuCoHeadline200 ;
+    font-size: 22px;
+    width: 462.63px;
+    margin-top: 30px;
+
+}
+.child23{
+    text-align: right;
+    font-family: DuCoHeadline200 ;
+    font-size: 12px;
+    /* height:200px ;
+    width: 400px; */
+    margin-top: 15px;
+    
+}
+
+/* child3 */
+.cecter{
+    font-family: DuCoHeadline400 ;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+
+
+}
+.bbb{
+    font-family: DuCoHeadline400 ;
+    font-size: 16px;
+    margin-right: 15px;
+    color: black;
+}
+.input1{
+    margin-right: 15px;
+    border: 1px solid #E5E5E5;
+
+}
+/* */
+footer{
+    background-color: black;
+    /* height: 600.87px;
+    margin-top: 15px; */
+    margin-right: 10px;
+}
+.text{
+    color: white;
+    text-align: center;
+    /* width:580px ;
+    height:154px ; */
+    float: right;
+   
+}
+.margin{
+    float: right;
+}
+h3{
+    color: white;
+}
+table{
+    border: 1px solid white;
+    height: 260px;
+    width: 357px;
+    text-align: right;
+}
+
+
+td input{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 350px;
+    height: 60px;
+   
+}
+textarea.form-control {
+    height: auto;
+    background-color: black;
+    color: white;
+    width: 350px;
+    border: none;
+    border-color:black;
+}
+.form-control:focus {
+    background-color: black;
+    /* background-color: #fff; */
+    border-color:black;
+}
+.table-dark td, .table-dark th, .table-dark thead th{
+    background-color: black;
+   
+}
+a img{
+    margin-left: 15px;
+}
+
+.tow{
+    margin-top: 15px;
+} 
+.tow h1{
+    color: white;
+    font-size: 26px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 650px;
+}
+.img{
+    float: right;
+}
+/* */
+.button3{
+    background-color: #F4B700;
+    color: white;
+    border: none;
+    margin-right: 90px;
+}
+.button2 {
+    background-color: black;
+    color: yellow;
+    font-size: 12px;
+    margin-left: 250px;
+    border: 1px solid #707070;
+    width: 375px;
+    height: 41px;
+    margin-bottom: 10px;
+}
+.table {
+    width: 80%;
+    max-width: 100%;
+    margin-right: 15px;
+}
+.margin {
+    float: right;
+    margin-right: 15px;
+}
+@media (min-width:768px){
+    #container{
+        grid-template-areas:
+            " nav      nav      nav  "
+            "ch2       ch2        ch2 "
+            "ch3        ch3        ch3"
+            "footer footer footer" ;
+        
+        }
+
+
+    }
+    @media (min-width: 992px) {
+        #container{
+            grid-template-areas:
+                " nav      nav      nav  "
+                "ch2       ch2        ch3 "
+                "footer footer footer" ;
+        }
+        .footer{
+            grid-template-columns: repeat(2,1fr);
+            height: 600.87px;
+    margin-top: 15px;
+
+     }
+     .table{
+         margin-top: 50px;
+         margin-right: 141px;
+         width: 357px;
+         height: 260pxs;
+     }
+     .tow h1{
+        margin-right: 141px;
+
+     }
+     .button2{
+        margin-left: 155px;
+
+     }
+     .one{
+         margin-right: 10px;
+     }
+     .child21{
+         /* margin-right: 184px; */
+         margin-bottom: 0px;
+     }
+     .child22{margin-right: 174px;}
+     .child23{margin-right: 271px;}
+     .child3{ 
+    width: 384px;
+    height: 559.62px;
+   
+ 
+}
+.img1{
+    margin-right: 92px;
+}
+
+
+.navbar-dark .navbar-brand.Login{
+   
+    margin-right: 245px;
+}
+ .navbar-nav .nav-link a{
+    padding-right: 51px;
+   
+}
+.button2{
+    margin-left: 150px;
+    width: 375px;
+    height: 41px; 
+
+}
+/* */
+.button3{
+    
+    width: 310px;
+    height: 44.39px;
+    margin-right: 50px;
+}
+.child23{
+    height:200px ;
+    width: 400px;
+    
+}
+.child23{
+    margin-top: 60px;
+}
+.child21{
+margin-right: 20px;
+}
+.tow h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 141px;
+    margin-left: 0px;
+  
+
+}
+}   
+

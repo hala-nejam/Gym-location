@@ -1,0 +1,347 @@
+@font-face {
+    font-family: DuCoHeadline200;
+    src: url(font/DuCoHeadline200.ttf);
+    font-family: DuCoHeadline400;
+    src: url(font/DuCoHeadline400.ttf);
+    font-family: DuCoHeadline600;
+    src: url(font/DuCoHeadline600.ttf);
+}
+
+*{
+    direction: rtl;
+}
+body{ 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*grid*/
+        #container{
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            gap:50px 5px;
+            grid-template-areas:
+            " head head head  "
+            "nav nav nav "
+            "sl sl sl "
+            "content content content "
+            "footer footer footer" ;
+        
+        }
+        .head{
+            grid-area: head;
+           
+        }
+        .nav{
+            grid-area: nav;
+           display: block;
+           
+            
+        }
+        .slidelef{
+            grid-area: sl;
+            margin-right: 20px;
+        }
+        .content{
+            grid-area: content;
+            margin-right: 20px;
+            }
+            .footer{
+                grid-area: footer;
+              
+            }
+            /* start nav*/
+            .nav{
+                display: grid;
+            }
+
+.nav-item {
+    font-size: 16px;
+    text-align: right;
+}
+
+.navbar-dark .navbar-brand.Login{
+    color: #F4B700;
+    /* margin-right: 245px; */
+}
+ .navbar-nav .nav-link a{
+    padding-right: 51px;
+    font-size: 16px;
+}
+
+            /*head*/
+            .card-header{
+                text-align: right;
+                font-size: 16px;
+                font-family:DuCoHeadline200 ;
+            }
+            /*nav */
+            .card-header{
+                text-align: right;
+            }
+            .nav .center{
+                font-size: 16px;
+                font-family:DuCoHeadline400 ;
+                opacity: 0.5px;
+              text-align: center;
+                /* margin-right: 30px; */
+
+            }
+            .nav h1{
+                text-align:center;
+            }
+            .h2{
+                text-align: right;
+                margin-right: 10px;
+            }
+            .nav p{
+                text-align: center;
+                font-size: 18px;
+            }
+            
+            /* slidelef*/
+            .slidelef{
+                text-align: right;
+               
+            }
+                /* content*/
+                .mringg{
+                    text-align: right;
+                }
+                .oopacity{
+                   font-family: Du Co Headline Arabic400;
+                   font-size: 20px;
+                    opacity: 0.5;
+                
+                }
+                .opacity{
+                    opacity: 0.5;
+                    
+                }
+                .tdm{
+                    margin-right: 20px;
+                    
+                }
+                    .buttonn3{
+                        background-color: #F4B700;
+                        color: white;
+                        border: none;
+                        width: 120px;
+                    height: 60px; 
+                    margin-right: 30px;
+                       
+                    }
+                    footer{
+                        background-color: black;
+                        /* height: 600.87px;
+                        margin-top: 15px; */
+                        margin-right: 10px;
+                        width: 100%;
+                    }
+                    .text{
+                        color: white;
+                        text-align: center;
+                        /* width:580px ;
+                        height:154px ; */
+                        float: right;
+                       
+                    }
+                    .margin{
+                       float:right;
+                    }
+                    h3{
+                        color: white;
+                    }
+                    table{
+                        border: 1px solid white;
+                        /* height: 260px;
+                        width: 357px; */
+                        text-align: right;
+                    }
+                    
+                    
+                    td input{
+                        background-color: black;
+                        color: white;
+                        border: none;
+                        width: 350px;
+                        height: 60px;
+                    }
+                    textarea.form-control {
+                        height: auto;
+                        background-color: black;
+                        color: white;
+                        width: 350px;
+                        border: none;
+                        border-color:black;
+                    }
+                    .form-control:focus {
+                        background-color: black;
+                        /* background-color: #fff; */
+                        border-color:black;
+                    }
+                    .table-dark td, .table-dark th, .table-dark thead th{
+                        background-color: black;
+                       
+                    }
+                    a img{
+                        margin-left: 15px;
+                    }
+                    
+                    .tow{
+                        margin-top: 15px;
+                    } 
+                    .tow h1{
+                        color: white;
+                        font-size: 26px;
+                        float: left;
+                        margin-top: 0px;
+                        margin-left: 650px;
+                    }
+                    .img{
+                        float: right;
+                    }
+                    .button2 {
+                        background-color: black;
+                        color: yellow;
+                        font-size: 12px;
+                        margin-left: 250px;
+                        border: 1px solid #707070;
+                        width: 375px;
+                        height: 41px;
+                        margin-bottom: 10px;
+                    }
+                    /* */
+
+                    .card-header {
+                      
+                        background-color: #F9F8F8;
+                        /* width: 1092px;
+                        height: 47px;
+                        margin-right: 135px; */
+                    }
+                    .slidelef div{
+                        margin-top: 20px;
+                    }
+                    .table {
+                        width: 80%;
+                        max-width: 100%;
+                        margin-right: 15px;
+                    }
+                    .margin {
+                        float: right;
+                        margin-right: 15px;
+                    }
+
+                @media (min-width:768px){
+                    
+                
+                
+                    }
+                    @media (min-width: 992px) {
+                      
+                        .footer{
+                            display: grid;
+                            grid-template-columns: repeat(2,1fr);
+                            height: 600.87px;
+                             margin-top: 15px;
+                
+                     }
+                     
+                .center3 {
+                    width: 587.19px;
+                    height: 485.69px;
+                    margin-right: 379px;
+                    font-size: 18px;
+                    text-align: right;
+                }
+                .h2{
+                    margin-right: 379px;
+                    font-size: 25px;
+                    font-family: DuCoHeadline400;
+                    text-align: right;
+
+                }
+                .mmaring{
+                    font-size: 35px;
+                    font-family: DuCoHeadline400;
+                    margin-right:226px ;
+
+                }
+                .immg3{
+                    margin-right:226px ;
+                }
+                .oopacity{
+                    margin-right: 341px;
+                }
+                .conn{
+                    margin-right: 341px;
+                }
+                .tdm{
+                    margin-right: 20px;
+                    
+                }
+                .buttonn3{
+                    width: 528px;
+                    height: 56px;
+                    margin-right: 375px;
+
+                }
+                .footer{
+                    grid-template-columns: repeat(2,1fr);
+                    height: 600.87px;
+            margin-top: 15px;
+        
+             }
+             .table{
+                 margin-top: 50px;
+                 margin-right: 141px;
+                 width: 357px;
+                 height: 260pxs;
+             }
+             .tow h1{
+                margin-right: 141px;
+        
+             }
+             .button2{
+                margin-left: 160px;
+
+             }
+             .one{
+                 margin-right: 10px;
+             }
+             .text{
+                width:580px ;
+                height:154px ;
+               
+            }
+                 
+            .img1{
+                margin-right: 92px;
+            }
+            
+            
+            .navbar-dark .navbar-brand.Login{
+               
+                margin-right: 245px;
+            }
+             
+                
+                        .nav .center{
+                            
+                            margin-right: 30px;
+            
+                        }
+                        .tow h1{
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            float: right;
+                            margin-right: 141px;
+                            margin-left: 0px;
+                          
+                        
+                        }
+                       
+                    }
+               
